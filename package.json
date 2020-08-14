@@ -1,0 +1,24 @@
+{
+  "name": "gracias",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "autoprefixer": "^9.8.6",
+    "postcss-cli": "^7.1.1",
+    "save-dev": "0.0.1-security",
+    "tailwindcss": "^1.6.2"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "cross-env": "^7.0.2",
+    "cssnano": "^4.1.10"
+  },
+  "scripts": {
+    "tailwindcss": "postcss public/css/tailwind.css -o public/css/app.css",
+    "tailwindcss:prod": "cross-env NODE_ENV=production  postcss public/css/tailwind.css -o public/css/app.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
